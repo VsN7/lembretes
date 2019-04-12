@@ -48,7 +48,7 @@
 	
 
 
-	$mysqli = new mysqli('localhost', 'root', '', 'aula') or die(mysqli_error($mysqli));
+	$mysqli = new mysqli('localhost', 'root', '', 'gerenciadorLembretes') or die(mysqli_error($mysqli));
 
 	$result = $mysqli->query("SELECT * FROM usuario") or die($mysqli->error);
 	?>

@@ -1,5 +1,5 @@
 <?php
-	$mysqli = new mysqli('localhost', 'root', '', 'aula') or die(mysqli_error($mysqli));
+	$mysqli = new mysqli('localhost', 'root', '', 'gerenciadorLembretes') or die(mysqli_error($mysqli));
 			$titulo = '';
 			$resenha = '';
 			$atualiza = false;
@@ -66,7 +66,7 @@
 		$_SESSION['mensagem'] = "Dados Alterados Com Sucesso";
 		$_SESSION['msg'] = "warning";
 		#header("location: lembretes.php");
-		header('location: cadastroLembrete.php');
+		header('location: lembretes.php');
 	}
 
  ?>
