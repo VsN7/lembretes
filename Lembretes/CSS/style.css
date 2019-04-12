@@ -1,0 +1,53 @@
+#curriculo {
+    margin-right: 55%
+  }
+  a{
+    color: white;
+    font-weight: bold;
+  }
+  .tab-pane,#nome{
+    margin-top: 4%;
+  }
+  nav{
+    background-color: #000;
+          opacity:0.80;
+  }
+  #perfil{
+    max-width: 39%;
+  }
+  .cc-profile-image{
+    margin-top: 12%;
+    margin-left: 39%;
+  }
+  #fundo{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-size: 100%;
+  }
+  #myTab{
+    width: 100%;
+  }
+  #nome{
+    margin-top: 1%;
+    font-size: 33px;
+    text-align: center;
+  }
+  .ico{
+    max-width: 40%;
+  }
+  .tempoServico{
+    font-size: 70%;
+  }
+  .nomeEmpresa{
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .tituloFuncao{
+    font-weight: bold;
+    font-size: 120%;
+  }
+  .direita{
+    width: 60%;
+    float: right;
+  }
