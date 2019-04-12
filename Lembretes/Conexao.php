@@ -3,7 +3,7 @@
 	$usuario = "root";
 	$senha = "";
 	$dbname = "gerenciadorLembretes";
-	
+	//Projeto de Vitor Santos do Nascimento
 	//Criar a conexao
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 	
