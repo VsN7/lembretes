@@ -162,10 +162,10 @@ Esse é um projeto WEB desenvolvido com foco em PHP, fazendo assim a interação
 		<div class="justify-content-end">
 			<ul class="nav justify-content-end">
 				<li class="nav - item"> <h3>Bem Vindo ,
-				 <?php
+				<?php
 						echo ucwords($_SESSION['nome']);					 
 				 
-						?> </h3>
+				?> </h3>
 				 </li>
 				<li class="nav - item"> <a href="logout.php"> <button type="button" class="btn btn-danger"> Sair</button> </a></li>
 				
@@ -208,34 +208,34 @@ Esse é um projeto WEB desenvolvido com foco em PHP, fazendo assim a interação
 
 	</form>
 	</div>
-			</div>
-				<?php 
-					while ($row = $result->fetch_assoc()):  ?>
-						<form method="POST" action="lembretesBD.php">
-						<input type="hidden" name="id" value="<?php echo $ide; ?>">
-						<!--<input type="hidden" name="nome" value="<?php echo $nome; ?>">-->
+	</div>
+		<?php 
+			while ($row = $result->fetch_assoc()):  ?>
+				<form method="POST" action="lembretesBD.php">
+				<input type="hidden" name="id" value="<?php echo $ide; ?>">
+				<!--<input type="hidden" name="nome" value="<?php echo $nome; ?>">-->
 					
-							<div class="row justify-content-center">
-								<div class="modal-dialog">
-         							<div class="modal-content" id="tamanho">
-             							<div class="modal-header"id="titulo" >
-                				 			<h4 class="modal-title" id="titulo"><?php echo $row['titulo']; ?></h4>
-           					  			</div>
-            							 <div class="modal-body" id="caixa">
-               								  <p id="paragrafo"><?php echo $row['resenha'];?></p>
-            							 </div>
-            						 <div class="modal-footer">
-             								<a class = "lapi" href="cadastroL.php?editar=<?php echo $row['id']; ?>"><i style="color:black; font-size:150%;" class="fas fa-edit"></i></a>
-										    <a class="lapi" href="lembretesBD.php?apagar=<?php echo $row['id']; ?>" ><i style="color:black; font-size:150%;" class="fas fa-trash"></i></a>
-									 </div>              							
-								</div>
-							</div>
+				<div class="row justify-content-center">
+				<div class="modal-dialog">
+         			<div class="modal-content" id="tamanho">
+             			<div class="modal-header"id="titulo" >
+                			<h4 class="modal-title" id="titulo"><?php echo $row['titulo']; ?></h4>
+           			</div>
+            			<div class="modal-body" id="caixa">
+               				<p id="paragrafo"><?php echo $row['resenha'];?></p>
+            			</div>
+            			<div class="modal-footer">
+             				<a class = "lapi" href="cadastroL.php?editar=<?php echo $row['id']; ?>"><i style="color:black; font-size:150%;" class="fas fa-edit"></i></a>
+					<a class="lapi" href="lembretesBD.php?apagar=<?php echo $row['id']; ?>" ><i style="color:black; font-size:150%;" class="fas fa-trash"></i></a>
+				</div>              							
+			</div>
+		</div>
 
 	</div>
 
 					
-					</form>
-					<?php endwhile; ?>
+	</form>
+<?php endwhile; ?>
 	
 </div>	
 
